@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<model type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="15702" systemVersion="18G95" minimumToolsVersion="Automatic" sourceLanguage="Swift" userDefinedModelVersionIdentifier="">
+    <entity name="PhotoInfo" representedClassName="PhotoInfo" syncable="YES" codeGenerationType="class">
+        <attribute name="fileId" optional="YES" attributeType="String"/>
+        <attribute name="fileInfoId" optional="YES" attributeType="String"/>
+        <attribute name="id" optional="YES" attributeType="UUID" usesScalarValueType="NO"/>
+        <attribute name="latitude" optional="YES" attributeType="Double" defaultValueString="0.0" usesScalarValueType="YES"/>
+        <attribute name="longitude" optional="YES" attributeType="Double" defaultValueString="0.0" usesScalarValueType="YES"/>
+        <attribute name="name" optional="YES" attributeType="String"/>
+        <attribute name="photo" optional="YES" attributeType="Binary"/>
+        <attribute name="photoDescription" optional="YES" attributeType="String"/>
+        <attribute name="synced" optional="YES" attributeType="Boolean" usesScalarValueType="YES"/>
+        <attribute name="typeWeed" optional="YES" attributeType="String"/>
+        <attribute name="weather" optional="YES" attributeType="String"/>
+        <attribute name="weedsAmount" optional="YES" attributeType="String"/>
+        <relationship name="sensors" optional="YES" toMany="YES" deletionRule="Cascade" destinationEntity="SensorInfo" inverseName="ofPhoto" inverseEntity="SensorInfo"/>
+    </entity>
+    <entity name="SensorInfo" representedClassName="SensorInfo" syncable="YES" codeGenerationType="class">
+        <attribute name="sensorName" optional="YES" attributeType="String"/>
+        <attribute name="units" optional="YES" attributeType="String"/>
+        <relationship name="ofPhoto" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="PhotoInfo" inverseName="sensors" inverseEntity="PhotoInfo"/>
+        <relationship name="values" optional="YES" toMany="YES" deletionRule="Cascade" destinationEntity="SensorValue" inverseName="ofSensor" inverseEntity="SensorValue"/>
+    </entity>
+    <entity name="SensorValue" representedClassName="SensorValue" syncable="YES" codeGenerationType="class">
+        <attribute name="value" optional="YES" attributeType="Double" defaultValueString="0.0" usesScalarValueType="YES"/>
+        <relationship name="ofSensor" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="SensorInfo" inverseName="values" inverseEntity="SensorInfo"/>
+    </entity>
+    <elements>
+        <element name="PhotoInfo" positionX="-63" positionY="-18" width="128" height="238"/>
+        <element name="SensorInfo" positionX="-63" positionY="63" width="128" height="103"/>
+        <element name="SensorValue" positionX="-54" positionY="72" width="128" height="73"/>
+    </elements>
+</model>
