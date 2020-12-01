@@ -24,10 +24,15 @@
 		0C48CB70253E945400A729C0 /* HistoricViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C48CB6F253E945400A729C0 /* HistoricViewController.swift */; };
 		0C48CB72253E946200A729C0 /* MapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C48CB71253E946200A729C0 /* MapViewController.swift */; };
 		0C48CB74253E9A5F00A729C0 /* UIVIewController+StatusBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C48CB73253E9A5F00A729C0 /* UIVIewController+StatusBar.swift */; };
+		0C5D11C4256E9F3500E65B0C /* Double+format.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C5D11C3256E9F3500E65B0C /* Double+format.swift */; };
 		0C6D2B00254241B4009CB0C0 /* CameraViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C6D2AFF254241B4009CB0C0 /* CameraViewController.swift */; };
 		0C6D2B0225424282009CB0C0 /* ImageButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C6D2B0125424282009CB0C0 /* ImageButton.swift */; };
 		0C865D5D25531D3D0041835F /* Model.xcdatamodel in Sources */ = {isa = PBXBuildFile; fileRef = 0C865D5C25531D3D0041835F /* Model.xcdatamodel */; };
 		0CA5C63E2540BFEC007B4435 /* PrimaryButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CA5C63D2540BFEC007B4435 /* PrimaryButton.swift */; };
+		0CAF0EC325695AE900F64D83 /* SensorType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CAF0EC225695AE900F64D83 /* SensorType.swift */; };
+		0CAF0EC525695DE400F64D83 /* SettingsManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CAF0EC425695DE400F64D83 /* SettingsManager.swift */; };
+		0CAF0EC725695E3B00F64D83 /* UserDefaultKeys.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CAF0EC625695E3B00F64D83 /* UserDefaultKeys.swift */; };
+		0CAF0EC9256B383600F64D83 /* HistoricTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CAF0EC8256B383600F64D83 /* HistoricTableViewCell.swift */; };
 		0CBB28D5253E00F600F5C5E7 /* UIStoryboard+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CBB28D4253E00F600F5C5E7 /* UIStoryboard+Extensions.swift */; };
 		0CBB28D8253E042900F5C5E7 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CBB28D7253E042900F5C5E7 /* HomeViewController.swift */; };
 		0CBB28DB253E046100F5C5E7 /* SettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CBB28DA253E046100F5C5E7 /* SettingsViewController.swift */; };
@@ -85,10 +90,15 @@
 		0C48CB6F253E945400A729C0 /* HistoricViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HistoricViewController.swift; sourceTree = "<group>"; };
 		0C48CB71253E946200A729C0 /* MapViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapViewController.swift; sourceTree = "<group>"; };
 		0C48CB73253E9A5F00A729C0 /* UIVIewController+StatusBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIVIewController+StatusBar.swift"; sourceTree = "<group>"; };
+		0C5D11C3256E9F3500E65B0C /* Double+format.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Double+format.swift"; sourceTree = "<group>"; };
 		0C6D2AFF254241B4009CB0C0 /* CameraViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CameraViewController.swift; sourceTree = "<group>"; };
 		0C6D2B0125424282009CB0C0 /* ImageButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageButton.swift; sourceTree = "<group>"; };
 		0C865D5C25531D3D0041835F /* Model.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Model.xcdatamodel; sourceTree = "<group>"; };
 		0CA5C63D2540BFEC007B4435 /* PrimaryButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PrimaryButton.swift; sourceTree = "<group>"; };
+		0CAF0EC225695AE900F64D83 /* SensorType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SensorType.swift; sourceTree = "<group>"; };
+		0CAF0EC425695DE400F64D83 /* SettingsManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsManager.swift; sourceTree = "<group>"; };
+		0CAF0EC625695E3B00F64D83 /* UserDefaultKeys.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserDefaultKeys.swift; sourceTree = "<group>"; };
+		0CAF0EC8256B383600F64D83 /* HistoricTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HistoricTableViewCell.swift; sourceTree = "<group>"; };
 		0CBB28D4253E00F600F5C5E7 /* UIStoryboard+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIStoryboard+Extensions.swift"; sourceTree = "<group>"; };
 		0CBB28D7253E042900F5C5E7 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 		0CBB28DA253E046100F5C5E7 /* SettingsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsViewController.swift; sourceTree = "<group>"; };
@@ -160,6 +170,8 @@
 				0C01A8932544EFDB00E0E080 /* WeatherType.swift */,
 				0C3EDD32254A33D5004EC8E1 /* WeedNumber.swift */,
 				0C1518AE255848B900BD77C8 /* Notifications.swift */,
+				0CAF0EC225695AE900F64D83 /* SensorType.swift */,
+				0CAF0EC625695E3B00F64D83 /* UserDefaultKeys.swift */,
 			);
 			path = Constants;
 			sourceTree = "<group>";
@@ -177,6 +189,7 @@
 			children = (
 				0C01A8992545070600E0E080 /* ConditionManager.swift */,
 				0C1518B0255856FF00BD77C8 /* GoogleManager.swift */,
+				0CAF0EC425695DE400F64D83 /* SettingsManager.swift */,
 			);
 			path = Managers;
 			sourceTree = "<group>";
@@ -194,6 +207,7 @@
 			isa = PBXGroup;
 			children = (
 				0C48CB6F253E945400A729C0 /* HistoricViewController.swift */,
+				0CAF0EC8256B383600F64D83 /* HistoricTableViewCell.swift */,
 			);
 			path = Historic;
 			sourceTree = "<group>";
@@ -339,6 +353,7 @@
 				0C48CB73253E9A5F00A729C0 /* UIVIewController+StatusBar.swift */,
 				0C01A8902544EA4300E0E080 /* UILabel+Highlight.swift */,
 				0C01A8952544F16300E0E080 /* UIView+Designable.swift */,
+				0C5D11C3256E9F3500E65B0C /* Double+format.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -568,6 +583,8 @@
 				0C01A8942544EFDB00E0E080 /* WeatherType.swift in Sources */,
 				0C865D5D25531D3D0041835F /* Model.xcdatamodel in Sources */,
 				0C48CB6A253E83E500A729C0 /* UITableView+Reusable.swift in Sources */,
+				0CAF0EC325695AE900F64D83 /* SensorType.swift in Sources */,
+				0CAF0EC525695DE400F64D83 /* SettingsManager.swift in Sources */,
 				0CFB54D0255B4A7E007575D8 /* PhotoInfoModelData.swift in Sources */,
 				0CE1C308253DEFBD00529720 /* UIImageView+Colors.swift in Sources */,
 				0CBB28D8253E042900F5C5E7 /* HomeViewController.swift in Sources */,
@@ -576,9 +593,11 @@
 				0C01A89A2545070600E0E080 /* ConditionManager.swift in Sources */,
 				0C48CB6C253E841A00A729C0 /* UITableViewCell+Reusable.swift in Sources */,
 				0C3EDD33254A33D5004EC8E1 /* WeedNumber.swift in Sources */,
+				0CAF0EC9256B383600F64D83 /* HistoricTableViewCell.swift in Sources */,
 				0CBF1D272534D1A000062081 /* DrawerController.swift in Sources */,
 				0CBB28DD253E0BC800F5C5E7 /* UIColor+Brand.swift in Sources */,
 				0C1518AF255848B900BD77C8 /* Notifications.swift in Sources */,
+				0CAF0EC725695E3B00F64D83 /* UserDefaultKeys.swift in Sources */,
 				0CBF1CF52534CE4300062081 /* SceneDelegate.swift in Sources */,
 				0C48CB70253E945400A729C0 /* HistoricViewController.swift in Sources */,
 				0CA5C63E2540BFEC007B4435 /* PrimaryButton.swift in Sources */,
@@ -586,6 +605,7 @@
 				0C3EDD2F254A2592004EC8E1 /* DialogPhotoViewController.swift in Sources */,
 				0C01A8962544F16300E0E080 /* UIView+Designable.swift in Sources */,
 				0C48CB74253E9A5F00A729C0 /* UIVIewController+StatusBar.swift in Sources */,
+				0C5D11C4256E9F3500E65B0C /* Double+format.swift in Sources */,
 				0C48CB72253E946200A729C0 /* MapViewController.swift in Sources */,
 				0C01A8912544EA4300E0E080 /* UILabel+Highlight.swift in Sources */,
 			);
@@ -762,7 +782,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 88X9G7LNM4;
+				DEVELOPMENT_TEAM = 6S9K3CKM99;
 				INFOPLIST_FILE = WeedAI/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -781,7 +801,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 88X9G7LNM4;
+				DEVELOPMENT_TEAM = 6S9K3CKM99;
 				INFOPLIST_FILE = WeedAI/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",

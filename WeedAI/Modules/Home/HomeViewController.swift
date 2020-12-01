@@ -11,10 +11,9 @@ import CoreMotion
 import CoreData
 import GoogleSignIn
 import AZSClient
+import CoreLocation
 
 class HomeViewController: UIViewController {
-    
-    
     
     let managedObjectContext = (UIApplication.shared.delegate as! AppDelegate).persistentContainer.viewContext
     var timer: Timer!
@@ -26,6 +25,8 @@ class HomeViewController: UIViewController {
     let altimeter = CMAltimeter()
     let queue = OperationQueue()
     var azureContainer: AZSCloudBlobContainer?
+    var locationManager: CLLocationManager?
+    var location: CLLocationCoordinate2D?
     
     public static func getInstance() -> HomeViewController {
         return UIStoryboard(name: "Main", bundle: nil).instantiateViewController()
@@ -39,6 +40,13 @@ class HomeViewController: UIViewController {
         GIDSignIn.sharedInstance()?.restorePreviousSignIn()
         startSensors()
         setupAzure()
+        setupLocation()
+    }
+    
+    func setupLocation() {
+        locationManager = CLLocationManager()
+        locationManager?.delegate = self
+        locationManager?.requestAlwaysAuthorization()
     }
     
     func startSensors() {
@@ -113,17 +121,35 @@ class HomeViewController: UIViewController {
                 let json = String(data: jsonData, encoding: String.Encoding.utf8)
                 let blobInfo = azureContainer?.blockBlobReference(fromName: "\(photoInfo.name ?? "").info")
                 blobInfo?.upload(fromText: json ?? "", completionHandler: { (err) in
-                    print(err)
+                    return
                 })
                 let blob = azureContainer?.blockBlobReference(fromName: "\(photoInfo.name ?? "").jpg")
                 blob?.upload(from: photoInfo.photo!, completionHandler: { (err) in
-                    print(err)
+                    return
                 })
+                photoInfo.synced = true
+                try managedObjectContext.save()
             }
         } catch let error as NSError {
             print("No ha sido posible cargar \(error), \(error.userInfo)")
         }
     }
+}
+
+extension HomeViewController: CLLocationManagerDelegate {
+    
+    func locationManager(_ manager: CLLocationManager, didChangeAuthorization status: CLAuthorizationStatus) {
+        if status == .authorizedAlways {
+            locationManager?.startUpdatingLocation()
+        }
+    }
+    
+    func locationManager(_ manager: CLLocationManager, didUpdateLocations locations: [CLLocation]) {
+        guard let locValue: CLLocationCoordinate2D = manager.location?.coordinate else { return }
+        print(locValue)
+        location = locValue
+    }
+    
 }
 
 
@@ -206,6 +232,8 @@ extension HomeViewController: CameraProtocol {
         photoInfo.weedsAmount = photo.weedNumber.getStringValue()
         photoInfo.weather = ConditionManager.shared.weatherType.getStringValue()
         photoInfo.typeWeed = ConditionManager.shared.weedType
+        photoInfo.latitude = location?.latitude ?? 0
+        photoInfo.longitude = location?.longitude ?? 0
         photoInfo.sensors = NSSet(array: [sensorAccelerometer, sensorGyro, sensorMagnetometer, sensorPressure])
         do {
             try managedObjectContext.save()

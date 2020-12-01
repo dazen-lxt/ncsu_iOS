@@ -22,4 +22,15 @@ enum WeatherType: Int {
             return "CLOUDY"
         }
     }
+    
+    static func getFromStringValue(value: String) -> WeatherType {
+        switch value {
+        case "SUNNY":
+            return .SUNNY
+        case "PARTIAL":
+            return .PARTIAL
+        default:
+            return .CLOUDY
+        }
+    }
 }

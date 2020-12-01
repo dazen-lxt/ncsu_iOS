@@ -224,7 +224,7 @@
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "49"
             endingLineNumber = "49"
-            landmarkName = "startSensors()"
+            landmarkName = "setupLocation()"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
@@ -356,14 +356,14 @@
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
             uuid = "5BC7A13F-B0D0-414E-930A-FE216DFEDB65"
-            shouldBeEnabled = "Yes"
+            shouldBeEnabled = "No"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "WeedAI/Modules/Home/HomeViewController.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "184"
-            endingLineNumber = "184"
+            startingLineNumber = "180"
+            endingLineNumber = "180"
             landmarkName = "savePhoto(photo:)"
             landmarkType = "7">
          </BreakpointContent>
@@ -372,14 +372,14 @@
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
             uuid = "E8BA2F29-F28F-49DD-976E-50C1DCAAF0B7"
-            shouldBeEnabled = "Yes"
+            shouldBeEnabled = "No"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "WeedAI/Modules/Home/HomeViewController.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "186"
-            endingLineNumber = "186"
+            startingLineNumber = "182"
+            endingLineNumber = "182"
             landmarkName = "savePhoto(photo:)"
             landmarkType = "7">
          </BreakpointContent>

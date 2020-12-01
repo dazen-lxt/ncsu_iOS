@@ -103,7 +103,6 @@ extension MenuViewController: UITableViewDelegate, UITableViewDataSource {
             delegate?.goToMap()
         case .login:
             GIDSignIn.sharedInstance()?.signIn()
-            delegate?.toggleMenu()
         case .logout:
             GIDSignIn.sharedInstance()?.signOut()
             GoogleManager.shared.reset()
