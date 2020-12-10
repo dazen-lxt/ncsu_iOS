@@ -10,7 +10,7 @@ import UIKit
 import CoreMotion
 import CoreData
 import GoogleSignIn
-import AZSClient
+import GoogleAPIClientForREST
 import CoreLocation
 
 class HomeViewController: UIViewController {
@@ -24,7 +24,7 @@ class HomeViewController: UIViewController {
     let motion = CMMotionManager()
     let altimeter = CMAltimeter()
     let queue = OperationQueue()
-    var azureContainer: AZSCloudBlobContainer?
+    var storage: StorageProtocol = DriveStorage()
     var locationManager: CLLocationManager?
     var location: CLLocationCoordinate2D?
     
@@ -35,11 +35,12 @@ class HomeViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         self.title = "Home"
+        GIDSignIn.sharedInstance()?.scopes = ["https://www.googleapis.com/auth/drive"]
         GIDSignIn.sharedInstance()?.presentingViewController = self
         // Automatically sign in the user.
         GIDSignIn.sharedInstance()?.restorePreviousSignIn()
         startSensors()
-        setupAzure()
+        storage.uploadImages(managedObjectContext: managedObjectContext)
         setupLocation()
     }
     
@@ -99,41 +100,6 @@ class HomeViewController: UIViewController {
         }
     }
     
-    func setupAzure() {
-        do {
-            let account = try AZSCloudStorageAccount(fromConnectionString: "SharedAccessSignature=sv=2019-12-12&ss=btqf&srt=sco&st=2020-10-09T15%3A05%3A52Z&se=2020-12-31T15%3A05%3A00Z&sp=rwdxlacup&sig=BZtGRAP3ZqZiFi7vq6e7wZ6unMMC%2BLNOweKPtVGSRvQ%3D;BlobEndpoint=https://weedsmedia.blob.core.usgovcloudapi.net")
-            let blobClient = account.getBlobClient()
-            azureContainer = blobClient.containerReference(fromName: "images")
-            uploadImagesByAzure()
-        } catch {
-            print(error)
-        }
-    }
-    
-    func uploadImagesByAzure() {
-        let fetchRequest : NSFetchRequest<PhotoInfo> = PhotoInfo.fetchRequest()
-        do {
-            let results = try managedObjectContext.fetch(fetchRequest)
-            for photoInfo in (results as [PhotoInfo]) where photoInfo.photo != nil {
-                let data = PhotoInfoModelData(name: photoInfo.name ?? "", description: photoInfo.photoDescription ?? "", weather: photoInfo.weather ?? "", weedType: photoInfo.typeWeed ?? "", weedsAmount: photoInfo.weedsAmount ?? "", latitude: "\(photoInfo.latitude)", longitude: "\(photoInfo.longitude)", email: GoogleManager.shared.email ?? "", sensors: (photoInfo.sensors?.allObjects as? [SensorInfo] ?? []).map { SensorModelData(name: $0.sensorName ?? "", unit: $0.units ?? "", values: ($0.values?.allObjects as? [SensorValue] ?? []).map { sensorValue in "\(sensorValue.value)" } ) })
-                let jsonEncoder = JSONEncoder()
-                let jsonData = try jsonEncoder.encode(data)
-                let json = String(data: jsonData, encoding: String.Encoding.utf8)
-                let blobInfo = azureContainer?.blockBlobReference(fromName: "\(photoInfo.name ?? "").info")
-                blobInfo?.upload(fromText: json ?? "", completionHandler: { (err) in
-                    return
-                })
-                let blob = azureContainer?.blockBlobReference(fromName: "\(photoInfo.name ?? "").jpg")
-                blob?.upload(from: photoInfo.photo!, completionHandler: { (err) in
-                    return
-                })
-                photoInfo.synced = true
-                try managedObjectContext.save()
-            }
-        } catch let error as NSError {
-            print("No ha sido posible cargar \(error), \(error.userInfo)")
-        }
-    }
 }
 
 extension HomeViewController: CLLocationManagerDelegate {
@@ -239,6 +205,18 @@ extension HomeViewController: CameraProtocol {
             try managedObjectContext.save()
         } catch {
             print(error.localizedDescription)
+        }
+        uploadImages()
+    }
+    
+    private func uploadImages() {
+        if(!storage.isLoading) {
+            if(SettingsManager.shared.checkIfUseAzureStorage() || GoogleManager.shared.token == nil) {
+                storage = AzureStorage()
+            } else {
+                storage = DriveStorage()
+            }
+            storage.uploadImages(managedObjectContext: managedObjectContext)
         }
     }
 }

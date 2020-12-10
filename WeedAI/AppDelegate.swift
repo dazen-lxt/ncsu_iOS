@@ -60,9 +60,11 @@ class AppDelegate: UIResponder, UIApplicationDelegate, GIDSignInDelegate {
           GoogleManager.shared.reset()
           return
         }
+        
         GoogleManager.shared.email = user.profile.email
         GoogleManager.shared.userName = user.profile.name
         GoogleManager.shared.profileUrl = user.profile.imageURL(withDimension: 80)
+        GoogleManager.shared.token = user.authentication.accessToken
         NotificationCenter.default.post(name: NSNotification.Name(rawValue: Notifications.googleLogged), object: nil)
     
     }

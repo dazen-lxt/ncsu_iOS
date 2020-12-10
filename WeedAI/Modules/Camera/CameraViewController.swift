@@ -42,6 +42,20 @@ class CameraViewController: UIViewController, AVCapturePhotoCaptureDelegate {
     
     override func viewDidAppear(_ animated: Bool) {
         super.viewDidAppear(animated)
+        checkPermissions()
+    }
+    
+    private func checkPermissions() {
+        let authStatus = AVCaptureDevice.authorizationStatus(for: AVMediaType.video)
+        switch authStatus {
+        case .authorized: setupSession()
+        case .denied: alertPromptToAllowCameraAccessViaSetting()
+        case .notDetermined: alertToEncourageCameraAccessInitially()
+        default: alertToEncourageCameraAccessInitially()
+        }
+    }
+    
+    private func setupSession() {
         captureSession = AVCaptureSession()
         captureSession.sessionPreset = .medium
         guard let backCamera = AVCaptureDevice.default(for: AVMediaType.video)
@@ -64,7 +78,7 @@ class CameraViewController: UIViewController, AVCapturePhotoCaptureDelegate {
         }
     }
     
-    func setupLivePreview() {
+    private func setupLivePreview() {
         videoPreviewLayer = AVCaptureVideoPreviewLayer(session: captureSession)
         videoPreviewLayer.videoGravity = .resizeAspect
         videoPreviewLayer.connection?.videoOrientation = .portrait
@@ -200,6 +214,39 @@ class CameraViewController: UIViewController, AVCapturePhotoCaptureDelegate {
         }
     }
     
+    func alertPromptToAllowCameraAccessViaSetting() {
+
+        let alert = UIAlertController(
+            title: "IMPORTANT",
+            message: "Camera access required for capturing photos!",
+            preferredStyle: UIAlertController.Style.alert
+        )
+        alert.addAction(UIAlertAction(title: "Dismiss", style: .cancel) { alert in
+            if AVCaptureDevice.devices(for: AVMediaType.video).count > 0 {
+                AVCaptureDevice.requestAccess(for: AVMediaType.video) { granted in
+                    DispatchQueue.main.async() {
+                        self.checkPermissions()
+                        
+                    }
+                    
+                }
+            }
+        })
+        present(alert, animated: true, completion: nil)
+    }
+
+    func alertToEncourageCameraAccessInitially() {
+        let alert = UIAlertController(
+            title: "IMPORTANT",
+            message: "Camera access required for capturing photos!",
+            preferredStyle: UIAlertController.Style.alert
+        )
+        alert.addAction(UIAlertAction(title: "Cancel", style: .default, handler: nil))
+        alert.addAction(UIAlertAction(title: "Allow Camera", style: .cancel, handler: { (alert) -> Void in
+            UIApplication.shared.open(URL(string: UIApplication.openSettingsURLString)!)
+        }))
+        present(alert, animated: true, completion: nil)
+    }
 }
 
 protocol CameraProtocol: class {

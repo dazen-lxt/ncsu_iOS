@@ -13,6 +13,8 @@
 		0C01A8942544EFDB00E0E080 /* WeatherType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C01A8932544EFDB00E0E080 /* WeatherType.swift */; };
 		0C01A8962544F16300E0E080 /* UIView+Designable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C01A8952544F16300E0E080 /* UIView+Designable.swift */; };
 		0C01A89A2545070600E0E080 /* ConditionManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C01A8992545070600E0E080 /* ConditionManager.swift */; };
+		0C0F928D257C09B500D11FFF /* Endpoint+UploadFile.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C0F928C257C09B500D11FFF /* Endpoint+UploadFile.swift */; };
+		0C0F928F257D420B00D11FFF /* MetadataModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C0F928E257D420B00D11FFF /* MetadataModel.swift */; };
 		0C1518AD255847B200BD77C8 /* UIApplication.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C1518AC255847B200BD77C8 /* UIApplication.swift */; };
 		0C1518AF255848B900BD77C8 /* Notifications.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C1518AE255848B900BD77C8 /* Notifications.swift */; };
 		0C1518B1255856FF00BD77C8 /* GoogleManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C1518B0255856FF00BD77C8 /* GoogleManager.swift */; };
@@ -29,6 +31,12 @@
 		0C6D2B0225424282009CB0C0 /* ImageButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C6D2B0125424282009CB0C0 /* ImageButton.swift */; };
 		0C865D5D25531D3D0041835F /* Model.xcdatamodel in Sources */ = {isa = PBXBuildFile; fileRef = 0C865D5C25531D3D0041835F /* Model.xcdatamodel */; };
 		0CA5C63E2540BFEC007B4435 /* PrimaryButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CA5C63D2540BFEC007B4435 /* PrimaryButton.swift */; };
+		0CA82C75257ADA060075D4FC /* DriveStorage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CA82C74257ADA060075D4FC /* DriveStorage.swift */; };
+		0CA82C78257ADC610075D4FC /* Endpoint+CreateDriveFolder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CA82C77257ADC610075D4FC /* Endpoint+CreateDriveFolder.swift */; };
+		0CA82C7A257ADC9F0075D4FC /* Endpoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CA82C79257ADC9F0075D4FC /* Endpoint.swift */; };
+		0CA82C7D257ADF4C0075D4FC /* DriveResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CA82C7C257ADF4C0075D4FC /* DriveResponse.swift */; };
+		0CA82C7F257AE1E80075D4FC /* CoreDataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CA82C7E257AE1E80075D4FC /* CoreDataManager.swift */; };
+		0CA82C87257B07770075D4FC /* Endpoint+GetFolder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CA82C86257B07770075D4FC /* Endpoint+GetFolder.swift */; };
 		0CAF0EC325695AE900F64D83 /* SensorType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CAF0EC225695AE900F64D83 /* SensorType.swift */; };
 		0CAF0EC525695DE400F64D83 /* SettingsManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CAF0EC425695DE400F64D83 /* SettingsManager.swift */; };
 		0CAF0EC725695E3B00F64D83 /* UserDefaultKeys.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CAF0EC625695E3B00F64D83 /* UserDefaultKeys.swift */; };
@@ -51,6 +59,8 @@
 		0CBF1D292534D1C000062081 /* MenuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CBF1D282534D1C000062081 /* MenuViewController.swift */; };
 		0CBF1D2B2534D1D500062081 /* RootViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CBF1D2A2534D1D500062081 /* RootViewController.swift */; };
 		0CE1C308253DEFBD00529720 /* UIImageView+Colors.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CE1C307253DEFBD00529720 /* UIImageView+Colors.swift */; };
+		0CEA8679257A69210004B70D /* StorageProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CEA8678257A69210004B70D /* StorageProtocol.swift */; };
+		0CEA867B257A69480004B70D /* AzureStorage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CEA867A257A69480004B70D /* AzureStorage.swift */; };
 		0CFB54D0255B4A7E007575D8 /* PhotoInfoModelData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CFB54CF255B4A7E007575D8 /* PhotoInfoModelData.swift */; };
 		437A4EB69248AD2B9558A196 /* Pods_WeedAI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2BC364BC6F7777499FA902B3 /* Pods_WeedAI.framework */; };
 /* End PBXBuildFile section */
@@ -79,6 +89,8 @@
 		0C01A8932544EFDB00E0E080 /* WeatherType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherType.swift; sourceTree = "<group>"; };
 		0C01A8952544F16300E0E080 /* UIView+Designable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+Designable.swift"; sourceTree = "<group>"; };
 		0C01A8992545070600E0E080 /* ConditionManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConditionManager.swift; sourceTree = "<group>"; };
+		0C0F928C257C09B500D11FFF /* Endpoint+UploadFile.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Endpoint+UploadFile.swift"; sourceTree = "<group>"; };
+		0C0F928E257D420B00D11FFF /* MetadataModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MetadataModel.swift; sourceTree = "<group>"; };
 		0C1518AC255847B200BD77C8 /* UIApplication.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIApplication.swift; sourceTree = "<group>"; };
 		0C1518AE255848B900BD77C8 /* Notifications.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Notifications.swift; sourceTree = "<group>"; };
 		0C1518B0255856FF00BD77C8 /* GoogleManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GoogleManager.swift; sourceTree = "<group>"; };
@@ -95,6 +107,12 @@
 		0C6D2B0125424282009CB0C0 /* ImageButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageButton.swift; sourceTree = "<group>"; };
 		0C865D5C25531D3D0041835F /* Model.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Model.xcdatamodel; sourceTree = "<group>"; };
 		0CA5C63D2540BFEC007B4435 /* PrimaryButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PrimaryButton.swift; sourceTree = "<group>"; };
+		0CA82C74257ADA060075D4FC /* DriveStorage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DriveStorage.swift; sourceTree = "<group>"; };
+		0CA82C77257ADC610075D4FC /* Endpoint+CreateDriveFolder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Endpoint+CreateDriveFolder.swift"; sourceTree = "<group>"; };
+		0CA82C79257ADC9F0075D4FC /* Endpoint.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Endpoint.swift; sourceTree = "<group>"; };
+		0CA82C7C257ADF4C0075D4FC /* DriveResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DriveResponse.swift; sourceTree = "<group>"; };
+		0CA82C7E257AE1E80075D4FC /* CoreDataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreDataManager.swift; sourceTree = "<group>"; };
+		0CA82C86257B07770075D4FC /* Endpoint+GetFolder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Endpoint+GetFolder.swift"; sourceTree = "<group>"; };
 		0CAF0EC225695AE900F64D83 /* SensorType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SensorType.swift; sourceTree = "<group>"; };
 		0CAF0EC425695DE400F64D83 /* SettingsManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsManager.swift; sourceTree = "<group>"; };
 		0CAF0EC625695E3B00F64D83 /* UserDefaultKeys.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserDefaultKeys.swift; sourceTree = "<group>"; };
@@ -123,6 +141,8 @@
 		0CBF1D282534D1C000062081 /* MenuViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuViewController.swift; sourceTree = "<group>"; };
 		0CBF1D2A2534D1D500062081 /* RootViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RootViewController.swift; sourceTree = "<group>"; };
 		0CE1C307253DEFBD00529720 /* UIImageView+Colors.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIImageView+Colors.swift"; sourceTree = "<group>"; };
+		0CEA8678257A69210004B70D /* StorageProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StorageProtocol.swift; sourceTree = "<group>"; };
+		0CEA867A257A69480004B70D /* AzureStorage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AzureStorage.swift; sourceTree = "<group>"; };
 		0CFB54CF255B4A7E007575D8 /* PhotoInfoModelData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoInfoModelData.swift; sourceTree = "<group>"; };
 		262C112D6AE2432C389F7B61 /* Pods-WeedAI.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WeedAI.debug.xcconfig"; path = "Target Support Files/Pods-WeedAI/Pods-WeedAI.debug.xcconfig"; sourceTree = "<group>"; };
 		2BC364BC6F7777499FA902B3 /* Pods_WeedAI.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_WeedAI.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -187,6 +207,7 @@
 		0C01A898254500D200E0E080 /* Managers */ = {
 			isa = PBXGroup;
 			children = (
+				0CA82C7E257AE1E80075D4FC /* CoreDataManager.swift */,
 				0C01A8992545070600E0E080 /* ConditionManager.swift */,
 				0C1518B0255856FF00BD77C8 /* GoogleManager.swift */,
 				0CAF0EC425695DE400F64D83 /* SettingsManager.swift */,
@@ -199,6 +220,7 @@
 			children = (
 				0C865D5C25531D3D0041835F /* Model.xcdatamodel */,
 				0CFB54CF255B4A7E007575D8 /* PhotoInfoModelData.swift */,
+				0C0F928E257D420B00D11FFF /* MetadataModel.swift */,
 			);
 			path = Data;
 			sourceTree = "<group>";
@@ -236,6 +258,26 @@
 				0C6D2B0125424282009CB0C0 /* ImageButton.swift */,
 			);
 			path = CustomViews;
+			sourceTree = "<group>";
+		};
+		0CA82C76257ADC260075D4FC /* Network */ = {
+			isa = PBXGroup;
+			children = (
+				0CA82C7B257ADF390075D4FC /* Responses */,
+				0CA82C77257ADC610075D4FC /* Endpoint+CreateDriveFolder.swift */,
+				0CA82C79257ADC9F0075D4FC /* Endpoint.swift */,
+				0CA82C86257B07770075D4FC /* Endpoint+GetFolder.swift */,
+				0C0F928C257C09B500D11FFF /* Endpoint+UploadFile.swift */,
+			);
+			path = Network;
+			sourceTree = "<group>";
+		};
+		0CA82C7B257ADF390075D4FC /* Responses */ = {
+			isa = PBXGroup;
+			children = (
+				0CA82C7C257ADF4C0075D4FC /* DriveResponse.swift */,
+			);
+			path = Responses;
 			sourceTree = "<group>";
 		};
 		0CBB28D6253E03A500F5C5E7 /* Home */ = {
@@ -279,6 +321,7 @@
 		0CBF1CF12534CE4300062081 /* WeedAI */ = {
 			isa = PBXGroup;
 			children = (
+				0CA82C76257ADC260075D4FC /* Network */,
 				0C3EDD34254A38A5004EC8E1 /* Data */,
 				0C01A898254500D200E0E080 /* Managers */,
 				0C01A8922544EFCD00E0E080 /* Constants */,
@@ -318,6 +361,7 @@
 		0CBF1D242534D17E00062081 /* Modules */ = {
 			isa = PBXGroup;
 			children = (
+				0CEA8677257A69060004B70D /* Storage */,
 				0C01A897254500B700E0E080 /* DialogPhoto */,
 				0C01A8852544D01600E0E080 /* DialogCondition */,
 				0C6D2AFE254241A4009CB0C0 /* Camera */,
@@ -356,6 +400,16 @@
 				0C5D11C3256E9F3500E65B0C /* Double+format.swift */,
 			);
 			path = Extensions;
+			sourceTree = "<group>";
+		};
+		0CEA8677257A69060004B70D /* Storage */ = {
+			isa = PBXGroup;
+			children = (
+				0CEA8678257A69210004B70D /* StorageProtocol.swift */,
+				0CEA867A257A69480004B70D /* AzureStorage.swift */,
+				0CA82C74257ADA060075D4FC /* DriveStorage.swift */,
+			);
+			path = Storage;
 			sourceTree = "<group>";
 		};
 		C8494AF76BE69DC574300E93 /* Pods */ = {
@@ -585,17 +639,26 @@
 				0C48CB6A253E83E500A729C0 /* UITableView+Reusable.swift in Sources */,
 				0CAF0EC325695AE900F64D83 /* SensorType.swift in Sources */,
 				0CAF0EC525695DE400F64D83 /* SettingsManager.swift in Sources */,
+				0CEA867B257A69480004B70D /* AzureStorage.swift in Sources */,
+				0CA82C78257ADC610075D4FC /* Endpoint+CreateDriveFolder.swift in Sources */,
+				0CA82C7D257ADF4C0075D4FC /* DriveResponse.swift in Sources */,
+				0C0F928F257D420B00D11FFF /* MetadataModel.swift in Sources */,
+				0CA82C7A257ADC9F0075D4FC /* Endpoint.swift in Sources */,
 				0CFB54D0255B4A7E007575D8 /* PhotoInfoModelData.swift in Sources */,
 				0CE1C308253DEFBD00529720 /* UIImageView+Colors.swift in Sources */,
+				0CA82C7F257AE1E80075D4FC /* CoreDataManager.swift in Sources */,
 				0CBB28D8253E042900F5C5E7 /* HomeViewController.swift in Sources */,
 				0CBB28DF253E17B100F5C5E7 /* UIButton+Colors.swift in Sources */,
 				0CBF1CF32534CE4300062081 /* AppDelegate.swift in Sources */,
+				0CA82C87257B07770075D4FC /* Endpoint+GetFolder.swift in Sources */,
 				0C01A89A2545070600E0E080 /* ConditionManager.swift in Sources */,
 				0C48CB6C253E841A00A729C0 /* UITableViewCell+Reusable.swift in Sources */,
 				0C3EDD33254A33D5004EC8E1 /* WeedNumber.swift in Sources */,
 				0CAF0EC9256B383600F64D83 /* HistoricTableViewCell.swift in Sources */,
+				0C0F928D257C09B500D11FFF /* Endpoint+UploadFile.swift in Sources */,
 				0CBF1D272534D1A000062081 /* DrawerController.swift in Sources */,
 				0CBB28DD253E0BC800F5C5E7 /* UIColor+Brand.swift in Sources */,
+				0CA82C75257ADA060075D4FC /* DriveStorage.swift in Sources */,
 				0C1518AF255848B900BD77C8 /* Notifications.swift in Sources */,
 				0CAF0EC725695E3B00F64D83 /* UserDefaultKeys.swift in Sources */,
 				0CBF1CF52534CE4300062081 /* SceneDelegate.swift in Sources */,
@@ -605,6 +668,7 @@
 				0C3EDD2F254A2592004EC8E1 /* DialogPhotoViewController.swift in Sources */,
 				0C01A8962544F16300E0E080 /* UIView+Designable.swift in Sources */,
 				0C48CB74253E9A5F00A729C0 /* UIVIewController+StatusBar.swift in Sources */,
+				0CEA8679257A69210004B70D /* StorageProtocol.swift in Sources */,
 				0C5D11C4256E9F3500E65B0C /* Double+format.swift in Sources */,
 				0C48CB72253E946200A729C0 /* MapViewController.swift in Sources */,
 				0C01A8912544EA4300E0E080 /* UILabel+Highlight.swift in Sources */,

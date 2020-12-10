@@ -18,10 +18,12 @@ class GoogleManager {
         email = nil
         userName = nil
         profileUrl = nil
+        token = nil
     }
     
     var email: String?
     var userName: String?
+    var token: String?
     var profileUrl: URL?
     
 }
