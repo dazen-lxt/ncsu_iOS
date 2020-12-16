@@ -48,6 +48,13 @@ class SettingsViewController: UIViewController {
     @IBAction func didSaveButtonClick(_ sender: Any) {
         SettingsManager.shared.saveSensors(sensorsSelected)
         SettingsManager.shared.saveStorageMethod(isAzure: isAzureSelected)
+        let alert = UIAlertController(
+            title: "Done",
+            message: "The settings were saved",
+            preferredStyle: UIAlertController.Style.alert
+        )
+        alert.addAction(UIAlertAction(title: "Ok", style: .default))
+        present(alert, animated: true, completion: nil)
     }
     
     

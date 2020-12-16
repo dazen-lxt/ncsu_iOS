@@ -131,7 +131,7 @@ extension WeedSearchTextField: UITableViewDelegate, UITableViewDataSource {
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "WeedSearchTextFieldCell", for: indexPath) as UITableViewCell
-        cell.backgroundColor = UIColor.clear
+        cell.backgroundColor = UIColor.red
         cell.textLabel?.text = weedFilteredList[indexPath.row]
         cell.textLabel?.highlight(searchedText: self.text)
         return cell

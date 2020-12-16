@@ -50,7 +50,11 @@ class CameraViewController: UIViewController, AVCapturePhotoCaptureDelegate {
         switch authStatus {
         case .authorized: setupSession()
         case .denied: alertPromptToAllowCameraAccessViaSetting()
-        case .notDetermined: alertToEncourageCameraAccessInitially()
+        case .notDetermined: AVCaptureDevice.requestAccess(for: AVMediaType.video) { granted in
+            DispatchQueue.main.async() {
+                self.setupSession()
+            }
+        }
         default: alertToEncourageCameraAccessInitially()
         }
     }
@@ -222,7 +226,13 @@ class CameraViewController: UIViewController, AVCapturePhotoCaptureDelegate {
             preferredStyle: UIAlertController.Style.alert
         )
         alert.addAction(UIAlertAction(title: "Dismiss", style: .cancel) { alert in
-            if AVCaptureDevice.devices(for: AVMediaType.video).count > 0 {
+            let deviceDiscoverySession = AVCaptureDevice.DiscoverySession(
+                deviceTypes: [ .builtInWideAngleCamera ],
+                mediaType: .video,
+                position: .unspecified
+            )
+            let avCaptureDevices = deviceDiscoverySession.devices
+            if avCaptureDevices.count > 0 {
                 AVCaptureDevice.requestAccess(for: AVMediaType.video) { granted in
                     DispatchQueue.main.async() {
                         self.checkPermissions()

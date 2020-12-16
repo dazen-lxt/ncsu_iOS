@@ -382,13 +382,13 @@
             filePath = "WeedAI/Modules/Settings/SettingsViewController.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "55"
-            endingLineNumber = "55"
+            startingLineNumber = "62"
+            endingLineNumber = "62"
             landmarkName = "updateViews()"
             landmarkType = "7">
             <Locations>
                <Location
-                  uuid = "27C23B89-12C0-4359-A88A-F8A3F54CEDB4 - 84a8c50aba4dff2a"
+                  uuid = "27C23B89-12C0-4359-A88A-F8A3F54CEDB4 - 3be06b9ae728377b"
                   shouldBeEnabled = "No"
                   ignoreCount = "0"
                   continueAfterRunningActions = "No"
@@ -403,7 +403,7 @@
                   offsetFromSymbolStart = "38">
                </Location>
                <Location
-                  uuid = "27C23B89-12C0-4359-A88A-F8A3F54CEDB4 - bd2f8cfbe9a11bd1"
+                  uuid = "27C23B89-12C0-4359-A88A-F8A3F54CEDB4 - 267226bb4c4d380"
                   shouldBeEnabled = "No"
                   ignoreCount = "0"
                   continueAfterRunningActions = "No"
@@ -424,7 +424,7 @@
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
             uuid = "EA6F188B-D4A8-488D-9136-F866B6E56582"
-            shouldBeEnabled = "Yes"
+            shouldBeEnabled = "No"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "WeedAI/Modules/Settings/SettingsViewController.swift"
@@ -660,7 +660,7 @@
             landmarkType = "7">
             <Locations>
                <Location
-                  uuid = "DB2DE760-9F6B-469E-A464-6FCD6F8FDE6B - f2f7d9b37a5a1ebf"
+                  uuid = "DB2DE760-9F6B-469E-A464-6FCD6F8FDE6B - 4e73baf5a8597431"
                   shouldBeEnabled = "No"
                   ignoreCount = "0"
                   continueAfterRunningActions = "No"
@@ -675,7 +675,7 @@
                   offsetFromSymbolStart = "1668">
                </Location>
                <Location
-                  uuid = "DB2DE760-9F6B-469E-A464-6FCD6F8FDE6B - 82a06aab4b331516"
+                  uuid = "DB2DE760-9F6B-469E-A464-6FCD6F8FDE6B - 3e2409ed99307fbf"
                   shouldBeEnabled = "No"
                   ignoreCount = "0"
                   continueAfterRunningActions = "No"
@@ -804,7 +804,7 @@
             landmarkType = "7">
             <Locations>
                <Location
-                  uuid = "86788B0A-EC7C-4A2D-84E8-25B8ED1D5C3B - a6ac0c2e701cdc04"
+                  uuid = "86788B0A-EC7C-4A2D-84E8-25B8ED1D5C3B - b6ac7ed53dfd113"
                   shouldBeEnabled = "No"
                   ignoreCount = "0"
                   continueAfterRunningActions = "No"
@@ -819,7 +819,7 @@
                   offsetFromSymbolStart = "952">
                </Location>
                <Location
-                  uuid = "86788B0A-EC7C-4A2D-84E8-25B8ED1D5C3B - 9e222c4d2d90d932"
+                  uuid = "86788B0A-EC7C-4A2D-84E8-25B8ED1D5C3B - 33e4e78e0e53d448"
                   shouldBeEnabled = "No"
                   ignoreCount = "0"
                   continueAfterRunningActions = "No"
@@ -1300,7 +1300,7 @@
             landmarkType = "7">
             <Locations>
                <Location
-                  uuid = "023A29FB-B149-4D66-B48E-6AD50AB513AA - 94456a8ea9247574"
+                  uuid = "023A29FB-B149-4D66-B48E-6AD50AB513AA - 5eb1af78f03deba4"
                   shouldBeEnabled = "No"
                   ignoreCount = "0"
                   continueAfterRunningActions = "No"
@@ -1315,7 +1315,7 @@
                   offsetFromSymbolStart = "1680">
                </Location>
                <Location
-                  uuid = "023A29FB-B149-4D66-B48E-6AD50AB513AA - 446e57120eb16b53"
+                  uuid = "023A29FB-B149-4D66-B48E-6AD50AB513AA - 8e9a92e457a8f5a2"
                   shouldBeEnabled = "No"
                   ignoreCount = "0"
                   continueAfterRunningActions = "No"
@@ -1486,8 +1486,8 @@
             filePath = "WeedAI/Modules/Camera/CameraViewController.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "63"
-            endingLineNumber = "63"
+            startingLineNumber = "67"
+            endingLineNumber = "67"
             landmarkName = "setupSession()"
             landmarkType = "7">
          </BreakpointContent>
@@ -1502,8 +1502,8 @@
             filePath = "WeedAI/Modules/Camera/CameraViewController.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "225"
-            endingLineNumber = "225"
+            startingLineNumber = "235"
+            endingLineNumber = "235"
             landmarkName = "alertPromptToAllowCameraAccessViaSetting()"
             landmarkType = "7">
          </BreakpointContent>
@@ -1512,7 +1512,7 @@
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
             uuid = "F1726B18-C564-4471-9163-5B9CF8A7494A"
-            shouldBeEnabled = "Yes"
+            shouldBeEnabled = "No"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "WeedAI/Modules/Camera/CameraViewController.swift"
@@ -1534,13 +1534,13 @@
             filePath = "WeedAI/Modules/Camera/CameraViewController.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "226"
-            endingLineNumber = "226"
+            startingLineNumber = "236"
+            endingLineNumber = "236"
             landmarkName = "alertPromptToAllowCameraAccessViaSetting()"
             landmarkType = "7">
             <Locations>
                <Location
-                  uuid = "FA1F91C8-1483-4F6C-9804-73ED0CAB50A0 - 5708203511080ba5"
+                  uuid = "FA1F91C8-1483-4F6C-9804-73ED0CAB50A0 - 64916735a89f447"
                   shouldBeEnabled = "No"
                   ignoreCount = "0"
                   continueAfterRunningActions = "No"
@@ -1555,7 +1555,7 @@
                   offsetFromSymbolStart = "312">
                </Location>
                <Location
-                  uuid = "FA1F91C8-1483-4F6C-9804-73ED0CAB50A0 - d68d579205552000"
+                  uuid = "FA1F91C8-1483-4F6C-9804-73ED0CAB50A0 - 87cc61d44ed4df85"
                   shouldBeEnabled = "No"
                   ignoreCount = "0"
                   continueAfterRunningActions = "No"
@@ -1582,9 +1582,89 @@
             filePath = "WeedAI/Modules/Camera/CameraViewController.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "228"
-            endingLineNumber = "228"
+            startingLineNumber = "238"
+            endingLineNumber = "238"
             landmarkName = "alertPromptToAllowCameraAccessViaSetting()"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "7752CA79-2851-46FC-93D0-8AB003DC4975"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "WeedAI/Modules/Menu/RootViewController.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "55"
+            endingLineNumber = "55"
+            landmarkName = "prepareNavigationBar()"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "B3D2F9E2-9020-4C57-82D9-0921841FABAB"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "WeedAI/Modules/Menu/RootViewController.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "53"
+            endingLineNumber = "53"
+            landmarkName = "prepareNavigationBar()"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "5EAE33A1-617F-454A-AF48-25AF257F6775"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "WeedAI/Modules/Menu/RootViewController.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "47"
+            endingLineNumber = "47"
+            landmarkName = "navigationController(_:willShow:animated:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "73387E87-A737-4027-8426-CDD364C8A20A"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "WeedAI/Modules/Menu/RootViewController.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "54"
+            endingLineNumber = "54"
+            landmarkName = "prepareNavigationBar()"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "2EF8F07E-3922-4325-91EC-CE6BDEAD5E0D"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "WeedAI/Modules/Settings/SettingsViewController.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "49"
+            endingLineNumber = "49"
+            landmarkName = "didSaveButtonClick(_:)"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>

@@ -46,8 +46,8 @@
             filePath = "WeedAI/Modules/Camera/CameraViewController.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "154"
-            endingLineNumber = "154"
+            startingLineNumber = "158"
+            endingLineNumber = "158"
             landmarkName = "didConditionButtonClick(_:)"
             landmarkType = "7">
          </BreakpointContent>
@@ -62,8 +62,8 @@
             filePath = "WeedAI/Modules/Camera/CameraViewController.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "156"
-            endingLineNumber = "156"
+            startingLineNumber = "160"
+            endingLineNumber = "160"
             landmarkName = "didConditionButtonClick(_:)"
             landmarkType = "7">
          </BreakpointContent>
@@ -78,8 +78,8 @@
             filePath = "WeedAI/Modules/Camera/CameraViewController.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "159"
-            endingLineNumber = "159"
+            startingLineNumber = "163"
+            endingLineNumber = "163"
             landmarkName = "setupConditions()"
             landmarkType = "7">
          </BreakpointContent>
@@ -94,8 +94,8 @@
             filePath = "WeedAI/Modules/Camera/CameraViewController.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "178"
-            endingLineNumber = "178"
+            startingLineNumber = "182"
+            endingLineNumber = "182"
             landmarkName = "handleTapToFocus(sender:)"
             landmarkType = "7">
          </BreakpointContent>
@@ -110,8 +110,8 @@
             filePath = "WeedAI/Modules/Camera/CameraViewController.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "174"
-            endingLineNumber = "174"
+            startingLineNumber = "178"
+            endingLineNumber = "178"
             landmarkName = "handleTapToFocus(sender:)"
             landmarkType = "7">
          </BreakpointContent>
@@ -180,7 +180,7 @@
             landmarkType = "3">
             <Locations>
                <Location
-                  uuid = "FD4977F5-4E78-40C9-9CD5-5CCDC82B157B - f4bbbb2d671f66b0"
+                  uuid = "FD4977F5-4E78-40C9-9CD5-5CCDC82B157B - 344f270c6fdcb9a6"
                   shouldBeEnabled = "No"
                   ignoreCount = "0"
                   continueAfterRunningActions = "No"
@@ -195,7 +195,7 @@
                   offsetFromSymbolStart = "370">
                </Location>
                <Location
-                  uuid = "FD4977F5-4E78-40C9-9CD5-5CCDC82B157B - 887c9e2516bdc756"
+                  uuid = "FD4977F5-4E78-40C9-9CD5-5CCDC82B157B - 488802041e7e1882"
                   shouldBeEnabled = "No"
                   ignoreCount = "0"
                   continueAfterRunningActions = "No"
@@ -210,7 +210,7 @@
                   offsetFromSymbolStart = "14">
                </Location>
                <Location
-                  uuid = "FD4977F5-4E78-40C9-9CD5-5CCDC82B157B - 28aaf95c832682cc"
+                  uuid = "FD4977F5-4E78-40C9-9CD5-5CCDC82B157B - e85e657d8be55dda"
                   shouldBeEnabled = "No"
                   ignoreCount = "0"
                   continueAfterRunningActions = "No"
@@ -225,7 +225,7 @@
                   offsetFromSymbolStart = "160">
                </Location>
                <Location
-                  uuid = "FD4977F5-4E78-40C9-9CD5-5CCDC82B157B - 6616cd4c0e539fb3"
+                  uuid = "FD4977F5-4E78-40C9-9CD5-5CCDC82B157B - a6e2516d06904e33"
                   shouldBeEnabled = "No"
                   ignoreCount = "0"
                   continueAfterRunningActions = "No"
@@ -240,7 +240,7 @@
                   offsetFromSymbolStart = "26">
                </Location>
                <Location
-                  uuid = "FD4977F5-4E78-40C9-9CD5-5CCDC82B157B - 3656e997788f377a"
+                  uuid = "FD4977F5-4E78-40C9-9CD5-5CCDC82B157B - f6a275b6704ce86c"
                   shouldBeEnabled = "No"
                   ignoreCount = "0"
                   continueAfterRunningActions = "No"
@@ -255,7 +255,7 @@
                   offsetFromSymbolStart = "27">
                </Location>
                <Location
-                  uuid = "FD4977F5-4E78-40C9-9CD5-5CCDC82B157B - bc5df6eef8552ef4"
+                  uuid = "FD4977F5-4E78-40C9-9CD5-5CCDC82B157B - 7ca96acff096f1e2"
                   shouldBeEnabled = "No"
                   ignoreCount = "0"
                   continueAfterRunningActions = "No"

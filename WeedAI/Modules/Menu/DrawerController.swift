@@ -65,6 +65,8 @@ class DrawerController: UIViewController, RootViewControllerDelegate {
     }
     
     func navigateTo(viewController: UIViewController) {
+        //Fix bug in iOS 14
+        rootViewController.setViewControllers([], animated: false)
         rootViewController.setViewControllers([viewController], animated: true)
         self.toggleMenu()
     }
